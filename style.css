@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #80808029;
+    font-family: raleway;
+}
+header{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 32px;
+    height: 32px;
+}
+.topo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.topo p{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+.largura-limitada{
+    max-width: 1024px;
+}
+.secao-1{
+    width: 100%;
+    height: auto;
+    background-image: url(img/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secao-form{
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+.form-cab{
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-cab img{
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+.form-cab h1{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.area-form{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+}
+.area-form h2{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label{
+    font-size: 16px;
+}
+.formulario input, .formulario select{
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+.formulario input{
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.formulario select{
+    padding: 0 3px;
+}
+.campo-dup{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.campo-dup div{
+    width: calc(50% - 10px);
+}
+.radio{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.radio div{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+.radio input{
+    width: 15px;
+}
+.radio label{
+    margin: 0 0 0 8px;
+}
+.formulario button{
+    width: 160px;
+    height: 32px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ofertas, .anuncios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0;
+}
+.ofertas h3, .anuncios h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ofertas h4, .anuncios h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.ofertas h4 span{
+    font-weight:bolder;
+}
+.galeria{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-d{
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+.img-2{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img-p{
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+.ofertas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ofertas figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+    color: #fff;
+    font-size: 17px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.galeria-anuncio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.imagem-anuncio{
+    width: calc(50% - 10px);
+    height: 100%;
+}
+.imagem-anuncio img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.coment{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.coment h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+.coment p{
+    margin-top: 15px;
+}
+
+footer{
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.grupo-rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+.grupo-rodape h2{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.grupo-rodape div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.grupo-rodape div img{
+    width: 18px; 
+}
+.grupo-rodape div span{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+@media (max-width: 1100px){
+    .largura-limitada{
+        width: 90%;
+    }
+}
+@media(max-width: 768px){
+    .formulario button{
+        width: 100%;
+    }
+    .galeria{
+        height: 100%;
+        flex-direction: column;
+    }
+    .img-2{
+        width: 100%;
+    }
+    .img-d, .img-2{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+    .galeria-anuncio{
+        flex-direction: column;
+    }
+    .imagem-anuncio{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .rodape{
+        flex-direction: column;
+        align-items: center;
+    }
+    .grupo-rodape{
+        width: 250px;
+    }
+}
+@media (max-width: 540px){
+    .campo-dup, .radio{
+        flex-direction: column;
+    }
+    .campo-dup div, .radio div{
+        width: 100%;
+    }
+}
